@@ -3,6 +3,7 @@ import React, { useState } from "react";
 function Item({ name, category }) {
   const [isInCart, setIsInCart] = useState(false);
 
+  // Toggle isInCart state when button is clicked
   function handleAddToCartClick() {
     setIsInCart((isInCart) => !isInCart);
   }
